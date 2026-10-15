@@ -118,7 +118,7 @@ export function CrearTarea(tareas, rl) {
     );
 
 
-    // CREAR UNA NUEVA TAREA A PARTIR DEL PROTOTIPO
+    // CREAR PROTOTIPO
     const nuevaTarea = Object.create(Tarea);
 
     // PROPIEDADES PROPIAS DE LA NUEVA TAREA
@@ -131,7 +131,7 @@ export function CrearTarea(tareas, rl) {
     nuevaTarea.vencimiento = vencimiento == "" ? null : vencimiento;
 
 
-    // AGREGAR LA TAREA AL ARRAY
+    // AGREGAR TAREA 
     tareas.push(nuevaTarea);
 
     console.log("\nTarea creada correctamente.");

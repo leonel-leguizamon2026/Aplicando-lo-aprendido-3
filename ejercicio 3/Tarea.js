@@ -28,7 +28,14 @@ const Tarea = {
     cambiarDificultad(nuevaDificultad) {
         this.dificultad = nuevaDificultad;
         this.ultimaModificacion = new Date();
+    },
+
+    
+    cambiarVencimiento(nuevoVencimiento) {
+        this.vencimiento = nuevoVencimiento;
+        this.ultimaModificacion = new Date();
     }
+
 
 };
 

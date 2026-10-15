@@ -318,8 +318,7 @@ export function EditarTarea(Indice, tarea, rl) {
 
         } else {
 
-            tarea[Indice - 1].vencimiento = NuevoVencimiento;
-
+            tarea[Indice - 1].cambiarVencimiento(NuevoVencimiento);
             console.log("Fecha de vencimiento actualizada");
             break;
         }
